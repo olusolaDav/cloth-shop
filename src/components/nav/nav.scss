@@ -1,0 +1,40 @@
+
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  
+    &--logo {
+      height: 2rem;
+      padding: 25px;
+    }
+  
+    .link {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      &--item {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: rgb(49, 48, 47);
+        transition: all .5s;
+        
+
+        &:hover {
+            color: green;
+            border-bottom: solid 2px green;
+            transform: translateY(2px);
+        }
+      }
+    }
+
+    .content{
+        display: none;
+
+    }
+  }

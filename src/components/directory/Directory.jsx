@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import {sections} from '../utilities/data.js'
-import { MenuItem } from '../components/MenuItem';
+import { sections } from '../../dist/data/data';
+import { MenuItem } from '../menu-items/MenuItem';
+
 
 import './directory.scss'
 
-export default class extends Component {
+export default class Directory extends Component {
     constructor() {
         super();
 
