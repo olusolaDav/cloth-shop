@@ -1031,6 +1031,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.15.4":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.7.tgz#a5f3328dc41ff39d803f311cfe17703418cf9825"
+  integrity sha512-L6rvG9GDxaLgFjg41K+5Yv9OMrU98sWe+Ykmc6FDJW/+vYZMhdOMKkISgzptMaERHvS2Y2lw9MDRm2gHhlQQoA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.16.7", "@babel/template@^7.3.3":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.7.tgz#8d126c8701fde4d66b264b3eba3d96f07666d155"
@@ -1201,12 +1208,12 @@
     "@firebase/util" "1.4.3"
     tslib "^2.1.0"
 
-"@firebase/app-compat@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@firebase/app-compat/-/app-compat-0.1.18.tgz#7d86c711c73231aaa408d04a331b468cb74ec7cb"
-  integrity sha512-YXmMLQro2g2xlNnzB6zVxYoFx9sJS/JDEQy6vsj3FpMUuARaImipL6W8KuGfH+tJ3M+q38qRaFROk5gK6PoCrQ==
+"@firebase/app-compat@0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@firebase/app-compat/-/app-compat-0.1.19.tgz#8a842b0a684899ec7213a26c8be08bcd5bfd7a07"
+  integrity sha512-a0TgAXcjF3htSdi10mRwAks1+73nwbmSMXzjlOQDYJ8t3HE7FvHxfB4hjuwHKfgr3MWZjcarsGKVr7LWhUAE8w==
   dependencies:
-    "@firebase/app" "0.7.17"
+    "@firebase/app" "0.7.18"
     "@firebase/component" "0.5.10"
     "@firebase/logger" "0.3.2"
     "@firebase/util" "1.4.3"
@@ -1217,14 +1224,15 @@
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.7.0.tgz#c9e16d1b8bed1a991840b8d2a725fb58d0b5899f"
   integrity sha512-6fbHQwDv2jp/v6bXhBw2eSRbNBpxHcd1NBF864UksSMVIqIyri9qpJB1Mn6sGZE+bnDsSQBC5j2TbMxYsJQkQg==
 
-"@firebase/app@0.7.17":
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.7.17.tgz#b6a75c03bc1236bf852e56ff7876e431835e18f1"
-  integrity sha512-OnZab790eMwRxkUs7o/kgniAzSBxecDTGEk1PVhiG0HQhKrIf+R7lgqOZHDb/2GJsX12jby1p/Z5+WJCBxVbJQ==
+"@firebase/app@0.7.18":
+  version "0.7.18"
+  resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.7.18.tgz#69660cbf02da80a1e1a1ab38b76b96231f9bb81d"
+  integrity sha512-jomDaPaEQEWfFUqvxQw4TYSs2gCT2BN0Ec1//3CdMsc1NcppduS31bxsjhn3KdPbtx4opkaZ2FcA+buHtdw9dw==
   dependencies:
     "@firebase/component" "0.5.10"
     "@firebase/logger" "0.3.2"
     "@firebase/util" "1.4.3"
+    idb "3.0.2"
     tslib "^2.1.0"
 
 "@firebase/auth-compat@0.2.9":
@@ -1378,13 +1386,13 @@
   dependencies:
     tslib "^2.1.0"
 
-"@firebase/messaging-compat@0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@firebase/messaging-compat/-/messaging-compat-0.1.8.tgz#3d8ae0302bfbd26e4e9b5cf05c832bffeb215e3d"
-  integrity sha512-1q0Bp/auG6XUSEBzmExrn6uU6JUtB5JxIHwTj8wmUf+JcdNqPMWou040Mem421Sxgd4GLn+vHHlVIRxv1yLYUA==
+"@firebase/messaging-compat@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@firebase/messaging-compat/-/messaging-compat-0.1.9.tgz#05e905bc5a26a3034635cdb2b1e7a1f257c2b08d"
+  integrity sha512-smcBhvTLfgE2KDtvDj1Pm9zQ7GeyR5BLarYLxtvmhhbV6tpa8g+UUE3pCdqN+y1kx6mIYqNOmEEXv+1YnSiYwQ==
   dependencies:
     "@firebase/component" "0.5.10"
-    "@firebase/messaging" "0.9.8"
+    "@firebase/messaging" "0.9.9"
     "@firebase/util" "1.4.3"
     tslib "^2.1.0"
 
@@ -1393,10 +1401,10 @@
   resolved "https://registry.yarnpkg.com/@firebase/messaging-interop-types/-/messaging-interop-types-0.1.0.tgz#bdac02dd31edd5cb9eec37b1db698ea5e2c1a631"
   integrity sha512-DbvUl/rXAZpQeKBnwz0NYY5OCqr2nFA0Bj28Fmr3NXGqR4PAkfTOHuQlVtLO1Nudo3q0HxAYLa68ZDAcuv2uKQ==
 
-"@firebase/messaging@0.9.8":
-  version "0.9.8"
-  resolved "https://registry.yarnpkg.com/@firebase/messaging/-/messaging-0.9.8.tgz#a7f38c268801513e7b02be10e951a1b2e825a082"
-  integrity sha512-X588ZFA/plaO4de7MyZs2gukrkdp+ounwqZ7JerHHVa6eKl1WNi9AuAfoXOJUMq+nX2DsOWYjohciCkC6qLrWw==
+"@firebase/messaging@0.9.9":
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/@firebase/messaging/-/messaging-0.9.9.tgz#28ed74e82b849dcedebe2b41693d24fe6e99e8ad"
+  integrity sha512-Fe6+VqFgVuvFOiVerQkPzdmHXnB7urujcKAxK3lRKxgafH89CRvXO1sPnPMvox5/JOCBZrAPok5KA7rOCxBguw==
   dependencies:
     "@firebase/component" "0.5.10"
     "@firebase/installations" "0.5.5"
@@ -2206,6 +2214,14 @@
   dependencies:
     "@types/node" "*"
 
+"@types/hoist-non-react-statics@^3.3.0":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/html-minifier-terser@^6.0.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-6.1.0.tgz#4fc33a00c1d0c16987b1a20cf92d20614c55ac35"
@@ -2316,6 +2332,16 @@
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
   dependencies:
     "@types/react" "*"
+
+"@types/react-redux@^7.1.20":
+  version "7.1.23"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.1.23.tgz#3c2bb1bcc698ae69d70735f33c5a8e95f41ac528"
+  integrity sha512-D02o3FPfqQlfu2WeEYwh3x2otYd2Dk1o8wAfsA0B1C2AJEFxE663Ozu7JzuWbznGgW248NaOF6wsqCGNq9d3qw==
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+    redux "^4.0.0"
 
 "@types/react@*":
   version "17.0.39"
@@ -3987,6 +4013,11 @@ dedent@^0.7.0:
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
+deep-diff@^0.3.5:
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/deep-diff/-/deep-diff-0.3.8.tgz#c01de63efb0eec9798801d40c7e0dae25b582c84"
+  integrity sha1-wB3mPvsO7JeYgB1Ax+Da4ltYLIQ=
+
 deep-equal@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.1.1.tgz#b5c98c942ceffaf7cb051e24e1434a25a2e6076a"
@@ -4915,17 +4946,17 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-firebase@^9.6.7:
-  version "9.6.7"
-  resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.6.7.tgz#fad619416c9c16f569cbfd2ba63a937bdc081e33"
-  integrity sha512-WiqGC26cepwVy0CZ4n3ZrLSNpVj1RCPJTB6j1tZU4SadPOrGmuPAt71qcWwaLyqKtRzNTyOA9F5J4ygGDplchw==
+firebase@^9.6.8:
+  version "9.6.8"
+  resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.6.8.tgz#9a2da35ff97f89813306bdc504b0d302b40d1558"
+  integrity sha512-a/RcgiqK9L5d/ZKpHZ21c3x/KKIo2XwXp2droukbBTuaX0Md8ppHQWYlSqLmWIDR0y2zwN17lrfNVsE6f+4ncA==
   dependencies:
     "@firebase/analytics" "0.7.5"
     "@firebase/analytics-compat" "0.1.6"
-    "@firebase/app" "0.7.17"
+    "@firebase/app" "0.7.18"
     "@firebase/app-check" "0.5.3"
     "@firebase/app-check-compat" "0.2.3"
-    "@firebase/app-compat" "0.1.18"
+    "@firebase/app-compat" "0.1.19"
     "@firebase/app-types" "0.7.0"
     "@firebase/auth" "0.19.9"
     "@firebase/auth-compat" "0.2.9"
@@ -4936,8 +4967,8 @@ firebase@^9.6.7:
     "@firebase/functions" "0.7.8"
     "@firebase/functions-compat" "0.1.9"
     "@firebase/installations" "0.5.5"
-    "@firebase/messaging" "0.9.8"
-    "@firebase/messaging-compat" "0.1.8"
+    "@firebase/messaging" "0.9.9"
+    "@firebase/messaging-compat" "0.1.9"
     "@firebase/performance" "0.5.5"
     "@firebase/performance-compat" "0.1.5"
     "@firebase/polyfill" "0.3.36"
@@ -5379,6 +5410,13 @@ history@^5.2.0:
   integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
   dependencies:
     "@babel/runtime" "^7.7.6"
+
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
 
 hoopy@^0.1.4:
   version "0.1.4"
@@ -8186,7 +8224,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -8347,15 +8385,27 @@ react-error-overlay@^6.0.10:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.10.tgz#0fe26db4fa85d9dbb8624729580e90e7159a59a6"
   integrity sha512-mKR90fX7Pm5seCOfz8q9F+66VCc1PGsWSBxKbITjfKVQHMNF2zudxHnMdJiB1fRCb+XsbQV9sO9DCkgsMQgBIA==
 
-react-is@^16.13.1:
+react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-is@^17.0.1:
+react-is@^17.0.1, react-is@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-redux@^7.2.6:
+  version "7.2.6"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.6.tgz#49633a24fe552b5f9caf58feb8a138936ddfe9aa"
+  integrity sha512-10RPdsz0UUrRL1NZE0ejTkucnclYSgXp5q+tB5SWx2qeG2ZJQJyymgAhwKy73yiL/13btfB6fPr+rgbMAaZIAQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@types/react-redux" "^7.1.20"
+    hoist-non-react-statics "^3.3.2"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^17.0.2"
 
 react-refresh@^0.11.0:
   version "0.11.0"
@@ -8502,6 +8552,20 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-logger@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
+  integrity sha1-91VZZvMJjzyIYExEnPC69XeCdL8=
+  dependencies:
+    deep-diff "^0.3.5"
+
+redux@^4.0.0, redux@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.1.2.tgz#140f35426d99bb4729af760afcf79eaaac407104"
+  integrity sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
 
 regenerate-unicode-properties@^10.0.1:
   version "10.0.1"

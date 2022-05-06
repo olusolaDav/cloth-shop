@@ -1,0 +1,28 @@
+$bg-light: rgb(12, 161, 24);
+$bg-dark: rgb(3, 68, 3);
+$white: white;
+$black: black;
+$grey-white: rgb(138, 138, 138);
+$grey-dark: rgb(39, 39, 39); 
+
+.button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 10px 0 10px;
+  background-color: $bg-dark;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $bg-light!important;
+    color: black;
+    border: 1px solid rgb(27, 27, 27);
+  }
+}
