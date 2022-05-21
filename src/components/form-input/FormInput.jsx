@@ -3,18 +3,16 @@ import './form-input.scss'
 
 export default function FormInput({label, handleChange, ...otherProps}) {
   return (
-    <div className='group'>
+    <div className="group">
       <input className="form-input" onChange={handleChange} {...otherProps} />
 
       {label ? (
         <label
-          className={`${otherProps.value.lenght ? "string" : null} form-input-label`}
+          className="form-input-label"
         >
           {label}
         </label>
       ) : null}
-
-      
     </div>
   );
 }

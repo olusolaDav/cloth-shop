@@ -76,10 +76,10 @@ export default class SignIn extends Component {
           value={this.state.password}
           handleChange={this.handleChange}
         />
-        <Button type="button" onClick={this.signInUser}>
+        <Button type="submit" onClick={this.signInUser}>
           Sign in
         </Button>
-        <Button type="button" onClick={this.logGoogleUser}>
+        <Button buttonType='google' type="submit" onClick={this.logGoogleUser}>
           Sign in with Google
         </Button>
       </div>
