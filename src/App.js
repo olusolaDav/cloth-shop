@@ -5,7 +5,7 @@ import {Header} from './components/nav/Nav'
 import {Route, Routes} from 'react-router-dom'
 import ShopPage from './pages/shop/ShopPage';
 //import SignInAndRegister from './pages/sign-in-and-reqister-page/SignInAndRegister';
-import SignIn from './components/sign-in/signIn';
+import Authentication from './components/authentication/Authentication';
 import Register from './components/register/Register';
 import React from 'react';
 //import { auth, createUserProfileDocument } from './firebase/firebaseConfig';
@@ -59,7 +59,7 @@ class App extends React.Component {
           <Route path="/" element={<Homepage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/auth" element={<Authentication />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>

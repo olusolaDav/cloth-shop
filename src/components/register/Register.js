@@ -1,7 +1,10 @@
 import  { useState } from "react";
 import Button from "../button/Button";
 import FormInput from "../form-input/FormInput";
-import { auth, creatUserDocumentFromAuth } from "../../firebase/firebaseConfig";
+import {
+  auth,
+  createUserDocumentFromAuth,
+} from "../../firebase/firebaseConfig";
 //import { useForm } from "react-hook-form";
 
 import "./register.scss";
@@ -11,8 +14,8 @@ import { Link } from "react-router-dom";
 const defaultFormField = {
   displayName: "",
   email: "",
-  paswword: "",
-  changePassword: ""
+  password: "",
+  confirmPassword: ""
 }
 
 
@@ -52,10 +55,10 @@ const Register = () => {
         password 
       );
 
-      await creatUserDocumentFromAuth(user, {displayName})
+      await createUserDocumentFromAuth(user, { displayName });
 
       resetFormFields();
-      
+      console.log('user',user)
     } catch (error) {
       if (error.code === "auth/network-request-failed") {
         alert('connection fail, please check your network')
@@ -73,7 +76,7 @@ const Register = () => {
       <h2>Create a new account</h2>
       <span className="title">
         register with a valid email and password or{" "}
-        <Link className="link--item" to="/sign-in">
+        <Link className="link--item" to="/auth">
           {" "}
           click here to signin
         </Link>{" "}
