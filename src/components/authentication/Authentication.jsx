@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { Link} from "react-router-dom";
 import {
   signInWithGooglePopup,
-  createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../firebase/firebaseConfig";
 
@@ -33,7 +32,6 @@ const Authentication = () => {
 
  const signInWithGoogle = async () => {
    const { user } = await signInWithGooglePopup();
-   await createUserDocumentFromAuth(user)
    setCurrentUser(user);
    console.log(user);
  };
